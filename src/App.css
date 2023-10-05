@@ -1,38 +1,60 @@
-.App {
+@font-face {
+  font-family: 'digital-clock-font';
+  src: url('https://fonts.cdnfonts.com/s/71615/alarm clock.woff');
+}
+
+#drum-machine {
+  background-color: rgb(190, 180, 180);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+#button-wrapper {
+  display: grid;
+  grid-template-columns: 30vh 30vh 30vh;
+  grid-template-rows: 30vh 30vh 30vh;
+  position: relative;
+  top: 4vh;
+  left: 2vw;
+  width: 90vh;
+  height: 90vh;
+  background-color:darkslategrey;
+}
+
+button {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  box-shadow: black 2px 2px;
+  background-color: gray;
+  color: black;
+}
+
+#display {
+  display: block;
+  position: absolute;
+  right: 5vw;
+  top: 10vh;
+  width: 70vh;
+  height: 25vh;
+  font-size: 10vh;
+  color:greenyellow;
   text-align: center;
+  font-family: 'digital-clock-font';
+  background-color: green;
+  border: black solid 2vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#title {
+  font-size: 5vh;
+  color: maroon;
+  position: relative;
+  width: 45vw;
+  left: 54vw;
+  bottom: 90vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
